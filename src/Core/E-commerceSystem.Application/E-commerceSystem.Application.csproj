@@ -11,4 +11,8 @@
     <ProjectReference Include="..\E-commerceSystem.Domain\E-commerceSystem.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Contracts\_Share\" />
+  </ItemGroup>
+
 </Project>

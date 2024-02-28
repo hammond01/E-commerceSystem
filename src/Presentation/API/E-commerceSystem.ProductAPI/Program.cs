@@ -1,3 +1,7 @@
+using E_commerceSystem.Application.Contracts.ProductAPI;
+using E_commerceSystem.Infrastructure.Data;
+using E_commerceSystem.Infrastructure.Implementations.ProductAPI;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -6,7 +10,8 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-
+builder.Services.AddTransient<IDataAccess, DataAccess>();
+builder.Services.AddScoped<IProductRepository, ProductRepository>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
