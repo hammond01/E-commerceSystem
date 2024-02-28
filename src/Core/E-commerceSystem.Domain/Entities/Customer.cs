@@ -1,7 +1,11 @@
-﻿namespace E_commerceSystem.Domain.Entities;
-public class Customer
+﻿using System.ComponentModel.DataAnnotations;
+using E_commerceSystem.Domain.Entities.Base;
+
+namespace E_commerceSystem.Domain.Entities;
+public class Customer : BaseEntities
 {
-    public string? CustomerID { get; set; }
+    [Key]
+    public Guid CustomerID { get; set; }
     public string? CompanyName { get; set; }
     public string? ContactName { get; set; }
     public string? ContactTitle { get; set; }

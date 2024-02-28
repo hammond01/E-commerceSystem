@@ -1,7 +1,11 @@
-﻿namespace E_commerceSystem.Domain.Entities;
-public class Supplier
+﻿using System.ComponentModel.DataAnnotations;
+using E_commerceSystem.Domain.Entities.Base;
+
+namespace E_commerceSystem.Domain.Entities;
+public class Supplier : BaseEntities
 {
-    public int SupplierID { get; set; }
+    [Key]
+    public Guid SupplierID { get; set; }
     public string? CompanyName { get; set; }
     public string? ContactName { get; set; }
     public string? ContactTitle { get; set; }

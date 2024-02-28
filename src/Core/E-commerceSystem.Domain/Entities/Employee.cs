@@ -1,7 +1,11 @@
-﻿namespace E_commerceSystem.Domain.Entities;
-public class Employee
+﻿using System.ComponentModel.DataAnnotations;
+using E_commerceSystem.Domain.Entities.Base;
+
+namespace E_commerceSystem.Domain.Entities;
+public class Employee : BaseEntities
 {
-    public int EmployeeID { get; set; }
+    [Key]
+    public Guid EmployeeID { get; set; }
     public string? LastName { get; set; }
     public string? FirstName { get; set; }
     public string? Title { get; set; }
@@ -15,7 +19,6 @@ public class Employee
     public string? Country { get; set; }
     public string? HomePhone { get; set; }
     public string? Extension { get; set; }
-    public byte[]? Photo { get; set; }
     public string? Notes { get; set; }
     public int ReportsTo { get; set; }
     public string? PhotoPath { get; set; }
