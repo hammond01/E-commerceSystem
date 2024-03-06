@@ -1,6 +1,7 @@
 using E_commerceSystem.Application.Contracts.ProductAPI;
-using E_commerceSystem.Infrastructure.Data;
-using E_commerceSystem.Infrastructure.Implementations.ProductAPI;
+using E_commerceSystem.Persistence.Data;
+using E_commerceSystem.Persistence.Data.Impl;
+using E_commerceSystem.Persistence.Repositories.ProductAPI;
 
 var builder = WebApplication.CreateBuilder(args);
 
