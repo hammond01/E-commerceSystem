@@ -1,9 +1,7 @@
 ﻿using E_commerceSystem.Application.Contracts.ProductAPI;
 using Microsoft.AspNetCore.Mvc;
 namespace E_commerceSystem.ProductAPI.Controllers;
-[Route("api/[controller]")]
-[ApiController]
-public class ProductsController : ControllerBase
+public class ProductsController : ConBase
 {
     private readonly IProductRepository _repo;
     public ProductsController(IProductRepository repo)
