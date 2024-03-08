@@ -1,6 +1,10 @@
-﻿namespace E_commerceSystem.Domain.Entities;
-public class EmployeeTerritory
+﻿using System.ComponentModel.DataAnnotations;
+using E_commerceSystem.Domain.Entities.Base;
+
+namespace E_commerceSystem.Domain.Entities;
+public class EmployeeTerritory : BaseEntities
 {
-    public int EmployeeID { get; set; }
-    public string? TerritoryID { get; set; }
+    [Key]
+    public Guid EmployeeID { get; set; }
+    public Guid TerritoryID { get; set; }
 }

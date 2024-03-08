@@ -1,6 +1,9 @@
+using E_commerceSystem.Application;
 using E_commerceSystem.Application.Contracts.ProductAPI;
-using E_commerceSystem.Infrastructure.Data;
-using E_commerceSystem.Infrastructure.Implementations.ProductAPI;
+using E_commerceSystem.Persistence;
+using E_commerceSystem.Persistence.Data;
+using E_commerceSystem.Persistence.Data.Impl;
+using E_commerceSystem.Persistence.Repositories.ProductAPI;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,6 +12,8 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddApplicationServices();
+builder.Services.AddInfrastructureServices(builder.Configuration);
 builder.Services.AddSwaggerGen();
 builder.Services.AddTransient<IDataAccess, DataAccess>();
 builder.Services.AddScoped<IProductRepository, ProductRepository>();

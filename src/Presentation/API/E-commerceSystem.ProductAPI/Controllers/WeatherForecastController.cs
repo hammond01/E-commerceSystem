@@ -2,9 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace E_commerceSystem.ProductAPI.Controllers
 {
-    [ApiController]
-    [Route("[controller]")]
-    public class WeatherForecastController : ControllerBase
+    public class WeatherForecastController : ConBase
     {
         private static readonly string[] Summaries = new[]
         {

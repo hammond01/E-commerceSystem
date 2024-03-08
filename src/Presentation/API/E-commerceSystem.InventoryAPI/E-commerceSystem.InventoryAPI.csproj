@@ -11,6 +11,6 @@
     <PackageReference Include="Swashbuckle.AspNetCore"/>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Core\E-commerceSystem.Application\E-commerceSystem.Application.csproj" />
+    <ProjectReference Include="..\..\..\Core\E-commerceSystem.Application\E-commerceSystem.Application.csproj" />
   </ItemGroup>
 </Project>
