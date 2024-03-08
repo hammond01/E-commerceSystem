@@ -13,11 +13,9 @@
   <ItemGroup>
     <Folder Include="Contracts\_Share\" />
   </ItemGroup>
-
   <ItemGroup>
     <PackageReference Include="AutoMapper"  />
     <PackageReference Include="MediatR" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" />
   </ItemGroup>
-
 </Project>

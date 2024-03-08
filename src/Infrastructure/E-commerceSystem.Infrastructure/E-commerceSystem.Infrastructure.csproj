@@ -6,11 +6,19 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dapper" />
+    <PackageReference Include="System.Data.SqlClient" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" />
+  </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\Core\E-commerceSystem.Application\E-commerceSystem.Application.csproj" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="_Share\" />
+    <Folder Include="Data\EF\" />
+    <Folder Include="Implementations\_Share\" />
   </ItemGroup>
 
 </Project>
