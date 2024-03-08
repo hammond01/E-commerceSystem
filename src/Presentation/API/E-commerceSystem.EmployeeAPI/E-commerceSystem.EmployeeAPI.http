@@ -1,6 +1,0 @@
-@E_commerceSystem.EmployeeAPI_HostAddress = http://localhost:5278
-
-GET {{E_commerceSystem.EmployeeAPI_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###

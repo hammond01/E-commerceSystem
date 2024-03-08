@@ -1,6 +1,0 @@
-@E_commerceSystem.InventoryAPI_HostAddress = http://localhost:5180
-
-GET {{E_commerceSystem.InventoryAPI_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###
